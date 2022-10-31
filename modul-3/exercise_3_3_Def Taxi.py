@@ -17,4 +17,6 @@ def trip_price(path):
     return trip_price
 
 
+trip_price(int(input("Please, enter some distance in km "))) # для перевірки коду
+
 print(f"{total_trip} - кількість викликів таксі")
