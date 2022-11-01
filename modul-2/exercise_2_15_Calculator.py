@@ -16,8 +16,8 @@ Enter * for multiplication
 Enter / for division
 Enter = to Quit the program
 """)
-while end==False:
-    while wait_for_number == True:
+while not end:
+    while wait_for_number:
         try:
             user_input = input("Enter the number: ")
             operand=float(user_input)
@@ -37,7 +37,7 @@ while end==False:
             result/=operand
         except ZeroDivisionError:
             print(f"Ви ділите на нуль!")
-    while wait_for_number == False:
+    while not wait_for_number:
         user_input = input("Enter the operator: ")
         if user_input == "+" or user_input == "-" or user_input =="*" or user_input =="/":
             operator = user_input
