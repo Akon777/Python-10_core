@@ -10,13 +10,17 @@ total_trip = 0
 
 
 def trip_price(path):
+    
     global total_trip
+    
     total_trip += 1
-    trip_price = base_rate+price_per_km*path
+    trip_price = base_rate + price_per_km * path
     print (f"{trip_price} грн - суму оплати за послуги таксі")
-    return trip_price
+    
+    return
 
 
-trip_price(int(input("Please, enter some distance in km "))) # для перевірки коду
+trip_price(float(input("Please, enter some distance in km "))) # для перевірки коду
+trip_price(float(input("Please, enter some distance in km "))) # для перевірки коду
 
 print(f"{total_trip} - кількість викликів таксі")
